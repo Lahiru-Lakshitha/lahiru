@@ -26,27 +26,7 @@ const certifications: Certification[] = [
     image: "/certificates/google-analytics.jpg",
     category: "Digital Marketing",
   },
-  {
-    title: "Adobe Photoshop Expert",
-    platform: "Adobe",
-    year: "2023",
-    image: "/certificates/adobe-photoshop.jpg",
-    category: "Graphic Design",
-  },
-  {
-    title: "React Developer Certificate",
-    platform: "Coursera",
-    year: "2024",
-    image: "/certificates/react-developer.jpg",
-    category: "Web Development",
-  },
-  {
-    title: "SEO Fundamentals",
-    platform: "HubSpot",
-    year: "2023",
-    image: "/certificates/seo-fundamentals.jpg",
-    category: "Digital Marketing",
-  },
+  
 ];
 
 export function CertificationsSection() {
