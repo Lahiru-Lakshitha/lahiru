@@ -29,7 +29,7 @@ export function Footer() {
           {/* Brand Column */}
           <div>
             <a href="/" className="inline-block mb-4">
-              <span className="text-2xl font-display font-bold gradient-text">Marty X</span>
+              <span className="text-2xl font-display font-bold gradient-text">Lahiru</span>
             </a>
             <p className="text-muted-foreground text-sm mb-6 max-w-xs">
               Turning clicks into customers through data-driven marketing strategies and creative campaigns.
@@ -134,7 +134,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="py-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground text-center sm:text-left">
-            © {new Date().getFullYear()} Marty X. All rights reserved. Built with{" "}
+            © {new Date().getFullYear()} Lahiru. All rights reserved. Built with{" "}
             <Heart className="inline w-3.5 h-3.5 text-primary fill-primary" /> for growth.
           </p>
           

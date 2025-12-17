@@ -18,11 +18,11 @@ export interface PortfolioItem {
 
 export const categories = [
   { id: "all", label: "All", icon: null },
-  { id: "video-editing", label: "Video Editing", icon: Video },
   { id: "social-media-designs", label: "Social Media Designs", icon: Image },
-  { id: "social-media-projects", label: "Social Media Projects", icon: Share2 },
   { id: "website-designs", label: "Website Designs", icon: Palette },
+  { id: "social-media-projects", label: "Social Media Projects", icon: Share2 },
   { id: "thumbnails", label: "Thumbnails", icon: Monitor },
+  { id: "video-editing", label: "Video Editing", icon: Video },
   { id: "advertisements", label: "Advertisements", icon: Megaphone },
   { id: "photo-editing", label: "Photo Editing", icon: Camera },
 ];
@@ -363,6 +363,27 @@ export const portfolioItems: PortfolioItem[] = [
   ],
   showOnHomepage: false,
 },
+{
+  id: "website-1",
+  title: "Web Project – ÉLÉGANCE Luxury Fashion Website",
+  image: "https://i.postimg.cc/4N1Z2xzz/Screenshot-2025-12-17-165045.png",
+  description:
+    "A premium fashion website designed for modern elegance and timeless style. ÉLÉGANCE showcases curated collections with a clean, sophisticated interface that enhances brand identity and delivers a high-end shopping experience.",
+  category: "website-designs",
+  type: "image",
+  websiteUrl: "https://elegance-phi-six.vercel.app/",
+  features: [
+    "Luxury-focused minimalist UI with elegant typography",
+    "Full-width hero section with cinematic visuals",
+    "Smooth animations and refined hover interactions",
+    "Responsive layout optimized for desktop, tablet, and mobile",
+    "Clear navigation for Shop, New Arrivals, and Collections",
+    "Premium brand aesthetics using soft tones and balanced spacing",
+    "Conversion-optimized call-to-action buttons (Shop Now, View Collection)"
+  ],
+  showOnHomepage: true,
+},
+
 
 {
   id: "website-2",
@@ -403,7 +424,7 @@ export const portfolioItems: PortfolioItem[] = [
     "Mobile-optimized layout",
     "Modern UI/UX with smooth transitions",
   ],
-  showOnHomepage: true,
+  showOnHomepage: false,
 },
 
 {
