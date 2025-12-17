@@ -117,7 +117,7 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                <span className="text-muted-foreground text-sm">hello@martyx.com</span>
+                <span className="text-muted-foreground text-sm">agllakshitha@gmail.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-primary mt-0.5 shrink-0" />

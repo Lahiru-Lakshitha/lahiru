@@ -2,19 +2,19 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Send, MessageCircle, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Mail, Phone, MapPin, Send, MessageCircle, Linkedin, Twitter, Instagram, Facebook } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "hello@martyx.com", href: "mailto:hello@martyx.com" },
-  { icon: Phone, label: "WhatsApp", value: "+1 (555) 123-4567", href: "https://wa.me/15551234567" },
-  { icon: MapPin, label: "Location", value: "New York, USA", href: "#" },
+  { icon: Mail, label: "Email", value: "agllakshitha@gmail.com", href: "mailto:agllakshitha@gmail.com" },
+  { icon: Phone, label: "WhatsApp", value: "+94 76 1818048", href: "https://wa.me/+94761818048" },
+  { icon: MapPin, label: "Location", value: "151/1,Baduwatta,Angulugaha", href: "#" },
 ];
 
 const socialLinks = [
   { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
+  { icon: Facebook, href: "https://www.facebook.com/share/1CiiYNJvMF/?mibextid=wwXIfr", label: "Facebook" },
+  { icon: Instagram, href: "https://www.instagram.com/la_hirux?igsh=MW9wb3pqbjY4anYzbw%3D%3D&utm_source=qr", label: "Instagram" },
 ];
 
 export function ContactSection() {
@@ -93,7 +93,7 @@ export function ContactSection() {
 
             {/* WhatsApp CTA */}
             <Button variant="hero" size="lg" className="w-full mb-8" asChild>
-              <a href="https://wa.me/15551234567" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/+94761818048" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="mr-2 h-5 w-5" />
                 Chat on WhatsApp
               </a>
