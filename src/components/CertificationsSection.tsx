@@ -61,8 +61,8 @@ export function CertificationsSection() {
           </div>
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-            Professional{" "}
-            <span className="gradient-text">Certifications</span>
+            Certifications{" "}
+            <span className="gradient-text">Earned</span>
           </h2>
           
           <p className="text-lg text-muted-foreground">

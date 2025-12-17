@@ -54,13 +54,12 @@ export function PortfolioSection() {
           </div>
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-            Case Studies That{" "}
-            <span className="gradient-text">Speak Results</span>
+            Port{""}
+            <span className="gradient-text">folio</span>
           </h2>
           
           <p className="text-lg text-muted-foreground">
-            Real campaigns, real numbers. Here's a glimpse of how I've helped 
-            businesses achieve measurable growth.
+            Sample projects showcasing my digital marketing skills. 
           </p>
         </div>
 

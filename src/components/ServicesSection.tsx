@@ -1,41 +1,41 @@
-import { Search, Share2, Target, DollarSign, PenTool, Zap, ArrowUpRight } from "lucide-react";
+import { BarChart3, Share2, Megaphone, Code, Palette, Zap, ArrowUpRight } from "lucide-react";
 
 const services = [
   {
-    icon: Search,
-    title: "SEO Optimization",
-    description: "Dominate search rankings with technical SEO, content optimization, and link building strategies that drive organic traffic.",
-    features: ["Technical SEO Audit", "Keyword Research", "Content Strategy", "Link Building"],
-  },
-  {
     icon: Share2,
-    title: "Social Media Strategy",
-    description: "Build a loyal following and engaged community across all major platforms with content that resonates and converts.",
-    features: ["Platform Strategy", "Content Calendar", "Community Management", "Influencer Outreach"],
+    title: "Social Media Management",
+    description: "Creating and managing social media content, post scheduling, basic analytics,and engagement strategies while building hands-on experience..",
+    features: ["Content Planning", "Keyword Research", "Post Design", "Scheduling ","Engagement "],
   },
   {
-    icon: DollarSign,
-    title: "Google Ads Management",
-    description: "Maximize ROI with expertly managed PPC campaigns including Search, Display, Shopping, and YouTube ads.",
-    features: ["Campaign Setup", "Keyword Bidding", "Ad Copywriting", "Conversion Tracking"],
+    icon: BarChart3,
+    title: "Digital Marketing",
+    description: "Learning and applying digital marketing fundamentals including SEO basics,paid ads concepts, content marketing, and analytics.",
+    features: ["SEO Basics", "Google Ads ", "Analytics", "Content Strategy"],
   },
   {
-    icon: Target,
-    title: "Meta Ads Marketing",
-    description: "Reach your ideal customers on Facebook and Instagram with precision targeting and creative ad formats.",
-    features: ["Audience Research", "Creative Development", "A/B Testing", "Retargeting"],
+    icon: Megaphone,
+    title: "Social Media Advertising",
+    description: "Practicing Facebook and Instagram ad setup, audience targeting,creative testing, and performance analysis.",
+    features: ["Meta Ads", "Audience Targeting ", "Creative Testing", "Conversion Tracking"],
   },
   {
-    icon: PenTool,
-    title: "Branding & Creative",
-    description: "Stand out with compelling brand stories, visual identity, and content that captures your unique value proposition.",
-    features: ["Brand Strategy", "Visual Identity", "Content Creation", "Copywriting"],
+    icon: Code,
+    title: "Web Development",
+    description: "Designing and developing responsive websites using modern tools while improving UI, UX, and performance.",
+    features: ["HTML ", "CSS ", "JavaScript ", "React","Responsive Design"],
+  },
+  {
+    icon: Palette,
+    title: "Basic Branding & Design",
+    description: "Creating simple brand visuals, social media designs, and layouts to support online presence.",
+    features: ["Canva ", "Social Media Design", "UI Basics"],
   },
   {
     icon: Zap,
-    title: "Marketing Automation",
-    description: "Scale your marketing efforts with automated workflows, email sequences, and lead nurturing systems.",
-    features: ["Email Automation", "Lead Scoring", "CRM Integration", "Workflow Design"],
+    title: "Continuous Learning",
+    description: "Actively learning new tools, platforms, and strategies to improve skills in marketing and web development.",
+    features: ["Practice Projects", "Online Courses", "Certifications "],
   },
 ];
 
@@ -54,13 +54,12 @@ export function ServicesSection() {
           </div>
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-            Comprehensive Digital{" "}
-            <span className="gradient-text">Marketing Solutions</span>
+            Skills & Services {" "}
+            <span className="gradient-text">I’m Building</span>
           </h2>
           
           <p className="text-lg text-muted-foreground">
-            From strategy to execution, I provide end-to-end marketing services 
-            designed to accelerate your business growth.
+            Focused on learning, practicing, and delivering quality digital solutions.
           </p>
         </div>
 

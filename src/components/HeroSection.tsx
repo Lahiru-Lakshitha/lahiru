@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 
 function TypewriterText() {
-  const fullText = "Clicks Into Customers";
+  const fullText = "Social Media Handler";
   const [displayText, setDisplayText] = useState("");
   const [showCursor, setShowCursor] = useState(true);
 
@@ -75,13 +75,13 @@ export function HeroSection() {
             </div>
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-6 animate-slide-up">
-              Digital Marketer Who Turns{" "}
+              Aspiring Digital Marketer &{" "}
               <TypewriterText />
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8 animate-slide-up" style={{ animationDelay: "0.1s" }}>
-              I help businesses scale their online presence through data-driven strategies, 
-              creative campaigns, and results that speak for themselves.
+              IT graduate from the University of Colombo with a passion for digital marketing,social media management, and modern web development.
+
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-slide-up" style={{ animationDelay: "0.2s" }}>
@@ -163,7 +163,7 @@ export function HeroSection() {
               <div className="relative w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-primary/30 shadow-glow transition-all duration-500 hover:shadow-[0_0_60px_rgba(0,255,255,0.4)] hover:border-primary/50 group">
                 <img
                   src={profilePhoto}
-                  alt="Marty X - Digital Marketing Expert"
+                  alt="Lahiru - Digital Marketing Expert"
                   className="w-full h-full object-cover transition-all duration-500 group-hover:brightness-110"
                 />
               </div>

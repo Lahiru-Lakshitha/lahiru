@@ -73,7 +73,7 @@ export function Navbar() {
             className="flex items-center gap-2 cursor-pointer"
           >
             <span className="text-xl md:text-2xl font-display font-bold gradient-text">
-              Marty X
+              Lahiru
             </span>
           </button>
 
