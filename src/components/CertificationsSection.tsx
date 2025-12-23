@@ -24,11 +24,13 @@ const certifications: Certification[] = [
       "Earned a professional Digital Marketing certification from Google by successfully completing the Fundamentals of Digital Marketing program. The course emphasized practical skills in SEO, paid advertising, social media strategy, analytics, and online brand development.This credential is verifiable using Certificate ID: 443242277.",
   },
   {
-    title: "Google Analytics Certification",
-    platform: "Google",
-    year: "2023",
-    image: "certificates/evotech.jpg",
+    title: "Digital Marketing Certification – HubSpot Academy",
+    platform: "HubSpot Academy",
+    year: "2025",
+    image: "certificates/HubSpot.png",
     category: "Digital Marketing",
+    description:
+      "Successfully completed the Digital Marketing Certification from HubSpot Academy. This program validated expertise in inbound marketing strategies, SEO-friendly content creation, website optimization, social media strategy development, video marketing, paid advertising, and performance measurement. The certification demonstrates practical knowledge in planning, executing, and analyzing digital marketing campaigns with a data-driven and customer-focused approach.Certificate Code: 25bbca7680e04ab6960b5edc80a37cfe",
   },
   
 ];

@@ -9,25 +9,49 @@ import { CertificateModal, Certification } from "@/components/CertificateModal";
 
 const allCertifications: Certification[] = [
   {
-    title: "Google Ads Search Certification",
-    platform: "Google",
+    title: "Digital Marketing Certification – Evotech Education",
+    platform: "Evotech",
     year: "2024",
     image: "certificates/evotech.jpg",
-    category: "digital-marketing",
+    category: "Digital Marketing",
+    description:
+      "Successfully completed a professional Digital Marketing certification conducted by Evotech Education. The program covered SEO fundamentals, social media marketing, online advertising strategies, content marketing, and digital campaign planning.",
   },
   {
-    title: "Meta Blueprint Certification",
-    platform: "Meta",
-    year: "2024",
-    image: "certificates/evotech.jpg",
-    category: "digital-marketing",
-  },
-  {
-    title: "Google Analytics Certification",
+    title: "Google Digital Marketing Certification",
     platform: "Google",
-    year: "2023",
-    image: "certificates/evotech.jpg",
-    category: "digital-marketing",
+    year: "2025",
+    image: "certificates/Google-certificate.png",
+    category: "Digital Marketing",
+    description:
+      "Earned a professional Digital Marketing certification from Google by successfully completing the Fundamentals of Digital Marketing program. The course emphasized practical skills in SEO, paid advertising, social media strategy, analytics, and online brand development.This credential is verifiable using Certificate ID: 443242277.",
+  },
+ {
+    title: "Digital Marketing Certification – HubSpot Academy",
+    platform: "HubSpot Academy",
+    year: "2025",
+    image: "certificates/HubSpot.png",
+    category: "Digital Marketing",
+    description:
+      "Successfully completed the Digital Marketing Certification from HubSpot Academy. This program validated expertise in inbound marketing strategies, SEO-friendly content creation, website optimization, social media strategy development, video marketing, paid advertising, and performance measurement. The certification demonstrates practical knowledge in planning, executing, and analyzing digital marketing campaigns with a data-driven and customer-focused approach.Certificate Code: 25bbca7680e04ab6960b5edc80a37cfe",
+  },
+  {
+    title: "AI Digital Marketing: Master SEO, Ads & Sales – Udemy",
+    platform: "Udemy",
+    year: "2025",
+    image: "certificates/udemy.jpg",
+    category: "Digital Marketing",
+    description:
+      "Successfully completed the AI Digital Marketing: Master SEO, Ads & Sales course on Udemy, delivered by MTF Institute of Management, Technology and Finance. This course provided practical insights into applying artificial intelligence tools and techniques in digital marketing, including SEO optimization, paid advertising strategies, and AI-driven sales optimization. The certification demonstrates the ability to leverage AI for smarter marketing decisions, campaign efficiency, and performance-driven growth.Certificate Code: UC-36bf3146-69c2-48e9-8146-afe3bda03b1c",
+  },
+  {
+    title: "Social Media Marketing Certification – eMarketing Institute",
+    platform: "eMarketing Institute",
+    year: "2025",
+    image: "certificates/eMarketing.jpg",
+    category: "Digital Marketing",
+    description:
+      "Successfully completed the Social Media Marketing certification from eMarketing Institute, including the required online course and examination. This certification validates practical knowledge in planning, executing, and optimizing social media marketing strategies across major platforms. The program covered content creation, audience engagement, campaign planning, and performance evaluation, demonstrating the ability to build effective social media strategies aligned with business and marketing objectives.Certificate Number: CERT002314122-EMI",
   },
 
 ];
