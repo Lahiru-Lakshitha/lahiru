@@ -6,18 +6,22 @@ import { CertificateModal, Certification } from "@/components/CertificateModal";
 
 const certifications: Certification[] = [
   {
-    title: "Google Ads Search Certification",
-    platform: "Google",
+    title: "Digital Marketing Certification – Evotech Education",
+    platform: "Evotech",
     year: "2024",
     image: "certificates/evotech.jpg",
     category: "Digital Marketing",
+    description:
+      "Successfully completed a professional Digital Marketing certification conducted by Evotech Education. The program covered SEO fundamentals, social media marketing, online advertising strategies, content marketing, and digital campaign planning.",
   },
   {
-    title: "Meta Blueprint Certification",
-    platform: "Meta",
-    year: "2024",
-    image: "certificates/evotech.jpg",
+    title: "Google Digital Marketing Certification",
+    platform: "Google",
+    year: "2025",
+    image: "certificates/Google-certificate.png",
     category: "Digital Marketing",
+    description:
+      "Earned a professional Digital Marketing certification from Google by successfully completing the Fundamentals of Digital Marketing program. The course emphasized practical skills in SEO, paid advertising, social media strategy, analytics, and online brand development.This credential is verifiable using Certificate ID: 443242277.",
   },
   {
     title: "Google Analytics Certification",

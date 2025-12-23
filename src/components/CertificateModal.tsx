@@ -52,7 +52,8 @@ export function CertificateModal({ certification, isOpen, onClose }: Certificate
 
   if (!isOpen || !certification) return null;
 
-  const description = certification.description || certificationDescriptions[certification.title] || "Professional certification demonstrating expertise in this field.";
+  const description = certification.description;
+
 
   return (
     <div
