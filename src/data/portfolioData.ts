@@ -347,6 +347,32 @@ export const portfolioItems: PortfolioItem[] = [
   // Website Designs
   {
   id: "website-1",
+  title: "Restaurant Website – Kottu Kingdom (Sri Lankan Street Food)",
+  image: "https://i.postimg.cc/wjT1RfVQ/Screenshot-2025-12-24-215311.png",
+  description:
+    "A modern and visually rich restaurant website designed for a Sri Lankan kottu restaurant. The site highlights bold food imagery, strong branding, and clear call-to-actions to drive online orders and menu exploration. Built to deliver an immersive street-food experience with a premium digital feel.",
+  category: "website-designs",
+  type: "image",
+  websiteUrl: "https://kottu-kingdom-hub.vercel.app/",
+  features: [
+    "Dark-themed, high-contrast hero section with bold typography",
+    "Strong food-focused visual storytelling using full-width imagery",
+    "Clear call-to-action buttons (Order Now, View Menu)",
+    "User-friendly navigation (Home, Menu, Order Online, About, Gallery, Contact)",
+    "Mobile-first responsive design for all screen sizes",
+    "Sticky navigation bar for easy access",
+    "WhatsApp quick-order floating button integration",
+    "Optimized layout for restaurant conversions and online orders",
+    "Modern UI inspired by premium food & beverage brands"
+
+
+
+
+  ],
+  showOnHomepage: false,
+},
+  {
+  id: "website-1",
   title: "Web Project – Premium Real Estate for Modern Living",
   image: "https://i.postimg.cc/hGRwKx3Z/Screenshot-2025-12-11-130751.png",
   description:
