@@ -280,7 +280,30 @@ export const portfolioItems: PortfolioItem[] = [
   type: "image",
   showOnHomepage: false,
 },
-
+  // AI Products / SaaS Projects
+  {
+  id: "Products-1",
+  title: "MarketAI – AI Digital Marketing Assistant (SaaS Platform)",
+  image: "https://i.postimg.cc/P5kPGTC7/Screenshot-2025-12-28-105058.png",
+  description:
+    "A full-stack AI-powered SaaS platform designed to help marketers generate high-quality social media captions, Google Ads copy, and SEO keywords. Built with real authentication, cloud database, AI edge functions, and a modern SaaS user experience.GitHub URL :",
+  category: "ai-saas-projects",
+  type: "image",
+  websiteUrl: "https://ai-marketing-mose.vercel.app/",
+   githubUrl: "https://github.com/Lahiru-Lakshitha/MarketAI-.git", // ✅
+  
+  features: [
+    "AI-powered content generation for social media, ads, and SEO",
+    "Secure email & password authentication system",
+    "Cloud database with user-specific saved history",
+    "Save, view, and reuse generated marketing content",
+    "Modern SaaS dashboard with dark mode UI",
+    "Loading states, notifications, and smooth UX feedback",
+    "Fully responsive design for desktop and mobile",
+    "Production deployment with scalable cloud backend",
+  ],
+  showOnHomepage: true,
+},
 
   // Social Media Projects
   {
@@ -611,30 +634,7 @@ export const portfolioItems: PortfolioItem[] = [
 },
 
 
-  // AI Products / SaaS Projects
-  {
-  id: "Products-1",
-  title: "MarketAI – AI Digital Marketing Assistant (SaaS Platform)",
-  image: "https://i.postimg.cc/g0HVpfJ2/Screenshot-2025-12-27-215848.png",
-  description:
-    "A full-stack AI-powered SaaS platform designed to help marketers generate high-quality social media captions, Google Ads copy, and SEO keywords. Built with real authentication, cloud database, AI edge functions, and a modern SaaS user experience.GitHub URL :",
-  category: "ai-saas-projects",
-  type: "image",
-  websiteUrl: "https://ai-marketing-mose.vercel.app/",
-   githubUrl: "https://github.com/Lahiru-Lakshitha/MarketAI-.git", // ✅
-  
-  features: [
-    "AI-powered content generation for social media, ads, and SEO",
-    "Secure email & password authentication system",
-    "Cloud database with user-specific saved history",
-    "Save, view, and reuse generated marketing content",
-    "Modern SaaS dashboard with dark mode UI",
-    "Loading states, notifications, and smooth UX feedback",
-    "Fully responsive design for desktop and mobile",
-    "Production deployment with scalable cloud backend",
-  ],
-  showOnHomepage: true,
-},
+
   {
     id: "ad-2",
     title: "Meta Ad Campaigns",
