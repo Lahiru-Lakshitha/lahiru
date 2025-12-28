@@ -6,6 +6,7 @@ on:
       - main
 
 permissions:
+  contents: read
   pages: write
   id-token: write
 
@@ -26,6 +27,10 @@ jobs:
       - name: Build project
         run: npm run build
 
+      # 🔴 THIS IS THE MISSING FIX
+      - name: SPA fallback for GitHub Pages
+        run: cp dist/index.html dist/404.html
+
       - name: Upload build artifacts
         uses: actions/upload-pages-artifact@v3
         with:
@@ -41,3 +46,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
