@@ -14,6 +14,8 @@ export interface PortfolioItem {
   features?: string[];
   client?: string;
   showOnHomepage: boolean;
+  githubUrl?: string;
+
 }
 
 export const categories = [
@@ -23,7 +25,7 @@ export const categories = [
   { id: "social-media-projects", label: "Social Media Projects", icon: Share2 },
   { id: "thumbnails", label: "Thumbnails", icon: Monitor },
   { id: "video-editing", label: "Video Editing", icon: Video },
-  { id: "advertisements", label: "Advertisements", icon: Megaphone },
+  { id: "ai-saas-projects", label: "AI Products / SaaS Projects", icon: Megaphone },
   { id: "photo-editing", label: "Photo Editing", icon: Camera },
 ];
 
@@ -31,7 +33,6 @@ export const galleryCategories = [
   "social-media-designs",
   "social-media-projects",
   "thumbnails",
-  "advertisements",
   "photo-editing",
 ];
 
@@ -147,7 +148,7 @@ export const portfolioItems: PortfolioItem[] = [
   description: "High-converting ad creatives for paid social campaigns.",
   category: "social-media-designs",
   type: "image",
-  showOnHomepage: true,
+  showOnHomepage: false,
 },
 
 {
@@ -497,6 +498,7 @@ export const portfolioItems: PortfolioItem[] = [
 },
 
 
+
   // Thumbnails
   {
   id: "thumb-1",
@@ -609,16 +611,30 @@ export const portfolioItems: PortfolioItem[] = [
 },
 
 
-  // Advertisements
+  // AI Products / SaaS Projects
   {
-    id: "ad-1",
-    title: "Google Display Ads",
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&h=400&fit=crop",
-    description: "High-converting display ad designs for Google Ads.",
-    category: "advertisements",
-    type: "image",
-    showOnHomepage: false,
-  },
+  id: "Products-1",
+  title: "MarketAI – AI Digital Marketing Assistant (SaaS Platform)",
+  image: "https://i.postimg.cc/g0HVpfJ2/Screenshot-2025-12-27-215848.png",
+  description:
+    "A full-stack AI-powered SaaS platform designed to help marketers generate high-quality social media captions, Google Ads copy, and SEO keywords. Built with real authentication, cloud database, AI edge functions, and a modern SaaS user experience.GitHub URL :",
+  category: "ai-saas-projects",
+  type: "image",
+  websiteUrl: "https://ai-marketing-mose.vercel.app/",
+   githubUrl: "https://github.com/Lahiru-Lakshitha/MarketAI-.git", // ✅
+  
+  features: [
+    "AI-powered content generation for social media, ads, and SEO",
+    "Secure email & password authentication system",
+    "Cloud database with user-specific saved history",
+    "Save, view, and reuse generated marketing content",
+    "Modern SaaS dashboard with dark mode UI",
+    "Loading states, notifications, and smooth UX feedback",
+    "Fully responsive design for desktop and mobile",
+    "Production deployment with scalable cloud backend",
+  ],
+  showOnHomepage: true,
+},
   {
     id: "ad-2",
     title: "Meta Ad Campaigns",
