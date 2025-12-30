@@ -325,17 +325,19 @@ export const portfolioItems: PortfolioItem[] = [
 
   {
     id: "social-project-2",
-    title: "Restaurant Rebrand",
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop",
+    title: "Instagram Feed Design – Brand Awareness Campaign",
+    image: "https://i.postimg.cc/4N9dvhZr/Untitled-design.png",
     images: [
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900&h=1200&fit=crop",
-      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&h=900&fit=crop",
-      "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1080&h=1350&fit=crop",
+      "https://i.postimg.cc/52P2b5mv/1.png",
+      "https://i.postimg.cc/mrt2DcdS/2.png",
+      "https://i.postimg.cc/XY2Y4Kgx/3.png",
+      "https://i.postimg.cc/5tT9FxTv/4.png",
+      "https://i.postimg.cc/vmk86Qk5/5.png",
     ],
-    description: "Full social media presence overhaul and content strategy for a modern dining experience.",
+    description: "Designed a visually consistent Instagram feed for a cafe brand to improve brand identity and audience engagement. The project focuses on clean layouts, balanced content, and scroll-friendly design for social media platforms.",
     category: "social-media-projects",
     type: "image",
-    results: "280% engagement increase",
+    results: "",
     showOnHomepage: false,
   },
   {
@@ -586,7 +588,7 @@ export const portfolioItems: PortfolioItem[] = [
 {
   id: "thumb-7",
   title: "Podcast Cover Art",
-  image: "https://i.postimg.cc/K85P8dqf/Green-and-black-Brush-Strokes-Creative-You-Tube-Thumbnail.png",
+  image: "https://i.postimg.cc/SsTztXZG/Untitled_(You_Tube_Thumbnail).png",
   description: "Stunning podcast covers and episode thumbnails.",
   category: "thumbnails",
   type: "image",
@@ -596,7 +598,7 @@ export const portfolioItems: PortfolioItem[] = [
 {
   id: "thumb-8",
   title: "Podcast Cover Art",
-  image: "https://i.postimg.cc/K85P8dqf/Green-and-black-Brush-Strokes-Creative-You-Tube-Thumbnail.png",
+  image: "https://i.postimg.cc/mDXF6cdY/ම_ල_ස_ට_සරලව.png",
   description: "Stunning podcast covers and episode thumbnails.",
   category: "thumbnails",
   type: "image",
@@ -606,7 +608,7 @@ export const portfolioItems: PortfolioItem[] = [
 {
   id: "thumb-9",
   title: "Podcast Cover Art",
-  image: "https://i.postimg.cc/K85P8dqf/Green-and-black-Brush-Strokes-Creative-You-Tube-Thumbnail.png",
+  image: "https://i.postimg.cc/L89D7PDc/White-Modern-Travel-Vlog-You-Tube-Thumbnail.png",
   description: "Stunning podcast covers and episode thumbnails.",
   category: "thumbnails",
   type: "image",
@@ -616,7 +618,7 @@ export const portfolioItems: PortfolioItem[] = [
 {
   id: "thumb-10",
   title: "Podcast Cover Art",
-  image: "https://i.postimg.cc/K85P8dqf/Green-and-black-Brush-Strokes-Creative-You-Tube-Thumbnail.png",
+  image: "https://i.postimg.cc/W4DHWrb4/Brown-Minimalist-Chill-Lofi-Music-You-Tube-Thumbnail.png",
   description: "Stunning podcast covers and episode thumbnails.",
   category: "thumbnails",
   type: "image",

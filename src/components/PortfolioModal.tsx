@@ -1,5 +1,12 @@
-import { X, Play, ExternalLink, Check } from "lucide-react";
-import { useState } from "react";
+import {
+  X,
+  Play,
+  ExternalLink,
+  Check,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { PortfolioItem } from "@/data/portfolioData";
 
@@ -9,14 +16,24 @@ interface PortfolioModalProps {
   onClose: () => void;
 }
 
-export function PortfolioModal({ item, isOpen, onClose }: PortfolioModalProps) {
+export function PortfolioModal({
+  item,
+  isOpen,
+  onClose,
+}: PortfolioModalProps) {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   if (!isOpen || !item) return null;
 
-  // ✅ CATEGORY FLAGS (IMPORTANT)
+  // Reset image index when opening a new item
+  useEffect(() => {
+    setCurrentIndex(0);
+    setIsPlaying(false);
+  }, [item]);
+
+  // Category flags
   const isSaasProject = item.category === "ai-saas-projects";
-  const isWebsiteDesign = item.category === "website-designs";
 
   const handleBackdropClick = (e: React.MouseEvent) => {
     if (e.target === e.currentTarget) {
@@ -29,6 +46,12 @@ export function PortfolioModal({ item, isOpen, onClose }: PortfolioModalProps) {
     onClose();
     setIsPlaying(false);
   };
+
+  const hasMultipleImages =
+    item.images && item.images.length > 1;
+
+  const currentImage =
+    item.images?.[currentIndex] || item.image;
 
   return (
     <div
@@ -46,7 +69,7 @@ export function PortfolioModal({ item, isOpen, onClose }: PortfolioModalProps) {
           <X className="w-5 h-5" />
         </button>
 
-        {/* Media */}
+        {/* Media Section */}
         <div className="relative aspect-video overflow-hidden bg-secondary">
           {item.type === "video" && item.videoUrl ? (
             isPlaying ? (
@@ -60,6 +83,7 @@ export function PortfolioModal({ item, isOpen, onClose }: PortfolioModalProps) {
             ) : (
               <>
                 <img
+                  key={currentIndex}
                   src={item.image}
                   alt={item.title}
                   className="w-full h-full object-cover"
@@ -69,24 +93,74 @@ export function PortfolioModal({ item, isOpen, onClose }: PortfolioModalProps) {
                   className="absolute inset-0 flex items-center justify-center bg-background/20"
                 >
                   <div className="w-20 h-20 rounded-full bg-primary/90 flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-glow">
-                    <Play className="w-8 h-8 text-primary-foreground ml-1" fill="currentColor" />
+                    <Play
+                      className="w-8 h-8 text-primary-foreground ml-1"
+                      fill="currentColor"
+                    />
                   </div>
                 </button>
               </>
             )
           ) : (
-            <img
-              src={item.image}
-              alt={item.title}
-              className="w-full h-full object-cover"
-            />
+            <>
+              <img
+                src={currentImage}
+                alt={item.title}
+                className="w-full h-full object-cover"
+              />
+
+              {/* Image Navigation */}
+              {hasMultipleImages && (
+                <>
+                  {/* Left Arrow */}
+                  <button
+                    onClick={() =>
+                      setCurrentIndex((prev) =>
+                        prev === 0
+                          ? item.images!.length - 1
+                          : prev - 1
+                      )
+                    }
+                    className="absolute left-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-background/70 hover:bg-background border border-border"
+                  >
+                    <ChevronLeft className="w-5 h-5" />
+                  </button>
+
+                  {/* Right Arrow */}
+                  <button
+                    onClick={() =>
+                      setCurrentIndex((prev) =>
+                        prev === item.images!.length - 1
+                          ? 0
+                          : prev + 1
+                      )
+                    }
+                    className="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-background/70 hover:bg-background border border-border"
+                  >
+                    <ChevronRight className="w-5 h-5" />
+                  </button>
+
+                  {/* Dots Indicator */}
+                  <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+                    {item.images!.map((_, idx) => (
+                      <span
+                        key={idx}
+                        className={`w-2 h-2 rounded-full ${
+                          idx === currentIndex
+                            ? "bg-white"
+                            : "bg-white/40"
+                        }`}
+                      />
+                    ))}
+                  </div>
+                </>
+              )}
+            </>
           )}
         </div>
 
         {/* Content */}
         <div className="p-6">
-          
-          {/* Category */}
           <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium capitalize mb-3">
             {item.category.replace(/-/g, " ")}
           </div>
@@ -102,7 +176,7 @@ export function PortfolioModal({ item, isOpen, onClose }: PortfolioModalProps) {
           {/* Features */}
           {item.features && item.features.length > 0 && (
             <div className="mb-6">
-              <h4 className="text-sm font-semibold text-foreground mb-3">
+              <h4 className="text-sm font-semibold mb-3">
                 Key Features
               </h4>
               <ul className="space-y-2">
@@ -127,11 +201,9 @@ export function PortfolioModal({ item, isOpen, onClose }: PortfolioModalProps) {
             </div>
           )}
 
-          {/* ACTION BUTTONS */}
+          {/* Action Buttons */}
           {(item.websiteUrl || item.githubUrl) && (
             <div className="pt-6 border-t border-border flex flex-wrap gap-4">
-
-              {/* View App / View Website */}
               {item.websiteUrl && (
                 <Button variant="hero" size="lg" asChild>
                   <a
@@ -145,7 +217,6 @@ export function PortfolioModal({ item, isOpen, onClose }: PortfolioModalProps) {
                 </Button>
               )}
 
-              {/* View GitHub */}
               {item.githubUrl && (
                 <Button variant="outline" size="lg" asChild>
                   <a
@@ -153,14 +224,6 @@ export function PortfolioModal({ item, isOpen, onClose }: PortfolioModalProps) {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="mr-2 h-4 w-4"
-                    >
-                      <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.11 3.29 9.44 7.86 10.97.58.11.79-.25.79-.56v-2.17c-3.2.7-3.88-1.38-3.88-1.38-.53-1.36-1.29-1.72-1.29-1.72-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.78 2.7 1.27 3.36.97.1-.75.4-1.27.72-1.56-2.55-.29-5.23-1.29-5.23-5.75 0-1.27.45-2.3 1.19-3.11-.12-.3-.52-1.52.11-3.17 0 0 .97-.31 3.18 1.19a10.9 10.9 0 012.9-.39c.99 0 1.99.13 2.9.39 2.2-1.5 3.17-1.19 3.17-1.19.64 1.65.24 2.87.12 3.17.74.81 1.18 1.84 1.18 3.11 0 4.47-2.69 5.45-5.25 5.73.41.36.78 1.07.78 2.16v3.2c0 .31.21.68.8.56A11.52 11.52 0 0023.5 12C23.5 5.74 18.27.5 12 .5z" />
-                    </svg>
                     View GitHub
                   </a>
                 </Button>
