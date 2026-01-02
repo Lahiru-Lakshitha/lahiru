@@ -30,10 +30,16 @@ export default function Portfolio() {
   const showVideos = activeCategory === "video-editing";
   const isMasonryCategory = ["social-media-designs", "thumbnails", "photo-editing"].includes(activeCategory);
 
-  const handleItemClick = (item: PortfolioItem) => {
-    setSelectedItem(item);
-    setIsModalOpen(true);
-  };
+const handleItemClick = (item: PortfolioItem) => {
+  if (item.category === "website-designs" && item.websiteUrl) {
+    window.open(item.websiteUrl, "_blank");
+    return;
+  }
+
+  setSelectedItem(item);
+  setIsModalOpen(true);
+};
+
 
   const handleCloseModal = () => {
     setIsModalOpen(false);

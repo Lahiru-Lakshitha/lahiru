@@ -21,16 +21,18 @@ export function PortfolioModal({
   isOpen,
   onClose,
 }: PortfolioModalProps) {
+  // ✅ ALL HOOKS FIRST
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  if (!isOpen || !item) return null;
-
-  // Reset image index when opening a new item
   useEffect(() => {
+    if (!item) return;
     setCurrentIndex(0);
     setIsPlaying(false);
   }, [item]);
+
+  // ✅ ONLY AFTER HOOKS
+  if (!isOpen || !item) return null;
 
   // Category flags
   const isSaasProject = item.category === "ai-saas-projects";
@@ -83,7 +85,6 @@ export function PortfolioModal({
             ) : (
               <>
                 <img
-                  key={currentIndex}
                   src={item.image}
                   alt={item.title}
                   className="w-full h-full object-cover"
@@ -109,10 +110,8 @@ export function PortfolioModal({
                 className="w-full h-full object-cover"
               />
 
-              {/* Image Navigation */}
               {hasMultipleImages && (
                 <>
-                  {/* Left Arrow */}
                   <button
                     onClick={() =>
                       setCurrentIndex((prev) =>
@@ -126,7 +125,6 @@ export function PortfolioModal({
                     <ChevronLeft className="w-5 h-5" />
                   </button>
 
-                  {/* Right Arrow */}
                   <button
                     onClick={() =>
                       setCurrentIndex((prev) =>
@@ -140,7 +138,6 @@ export function PortfolioModal({
                     <ChevronRight className="w-5 h-5" />
                   </button>
 
-                  {/* Dots Indicator */}
                   <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
                     {item.images!.map((_, idx) => (
                       <span
@@ -173,7 +170,6 @@ export function PortfolioModal({
             {item.description}
           </p>
 
-          {/* Features */}
           {item.features && item.features.length > 0 && (
             <div className="mb-6">
               <h4 className="text-sm font-semibold mb-3">
@@ -201,7 +197,6 @@ export function PortfolioModal({
             </div>
           )}
 
-          {/* Action Buttons */}
           {(item.websiteUrl || item.githubUrl) && (
             <div className="pt-6 border-t border-border flex flex-wrap gap-4">
               {item.websiteUrl && (
