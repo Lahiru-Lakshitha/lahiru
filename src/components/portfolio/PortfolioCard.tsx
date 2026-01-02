@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Play, ExternalLink } from "lucide-react";
+import { Play } from "lucide-react";
 import { PortfolioItem } from "@/data/portfolioData";
 import { MasonryGallery } from "./MasonryGallery";
 
@@ -50,7 +50,10 @@ export function VideoCard({ item, onClick }: VideoCardProps) {
               className="absolute inset-0 flex items-center justify-center"
             >
               <div className="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-glow">
-                <Play className="w-6 h-6 text-primary-foreground ml-1" fill="currentColor" />
+                <Play
+                  className="w-6 h-6 text-primary-foreground ml-1"
+                  fill="currentColor"
+                />
               </div>
             </button>
           </>
@@ -84,8 +87,6 @@ interface ImageCardProps {
 }
 
 export function ImageCard({ item, index = 0, onClick }: ImageCardProps) {
-  const isSaasProject = item.category === "ai-saas-projects";
-
   const isImageOnlyCategory = [
     "social-media-designs",
     "thumbnails",
@@ -145,21 +146,10 @@ export function ImageCard({ item, index = 0, onClick }: ImageCardProps) {
             </div>
           )}
 
+          {/* 👇 NO WEBSITE OPENING HERE ANYMORE */}
           {item.websiteUrl && (
-            <div
-              className="mt-4"
-              onMouseDown={(e) => e.stopPropagation()}
-              onClick={(e) => e.stopPropagation()}
-              onPointerDown={(e) => e.stopPropagation()}
-            >
-              <button
-                type="button"
-                onClick={() => window.open(item.websiteUrl!, "_blank")}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-all duration-200 hover:scale-105 hover:shadow-lg hover:shadow-primary/25"
-              >
-                <ExternalLink className="w-4 h-4" />
-                {isSaasProject ? "View App" : "View Website"}
-              </button>
+            <div className="mt-4 text-sm text-primary font-medium">
+              View details →
             </div>
           )}
         </div>
@@ -194,7 +184,11 @@ export function PortfolioGrid({
     <div className={gridCols}>
       {items.map((item, index) =>
         showVideos && item.type === "video" ? (
-          <VideoCard key={item.id} item={item} onClick={() => onItemClick(item)} />
+          <VideoCard
+            key={item.id}
+            item={item}
+            onClick={() => onItemClick(item)}
+          />
         ) : (
           <ImageCard
             key={item.id}
