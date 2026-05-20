@@ -397,6 +397,32 @@ export const portfolioItems: PortfolioItem[] = [
   ],
   showOnHomepage: false,
 },
+
+  // Website Designs
+{
+    id: "website-2",
+    title: "Tradarea Pvt Ltd – B2B Security Seals & Office Solutions Website",
+    image: "YOUR_IMAGE_LINK_HERE",
+    description:
+        "A modern corporate B2B website developed for Tradarea Pvt Ltd, a leading supplier of security seals, toner cartridges, air fresheners, and office solutions in Sri Lanka. The website features a premium enterprise-focused design, dynamic product showcases, category filtering, responsive layouts, and a professional user experience tailored for logistics, manufacturing, and corporate clients.",
+    category: "website-designs",
+    type: "image",
+    websiteUrl: "https://www.tradarea.com/",
+    features: [
+        "Modern premium corporate UI with dark/light theme support",
+        "Responsive design optimized for desktop, tablet, and mobile devices",
+        "Dynamic product category showcase with interactive filtering",
+        "Professional B2B-focused homepage with animated hero slider",
+        "Enterprise-style navigation and product browsing experience",
+        "SEO-optimized structure for better Google indexing and visibility",
+        "Fast-loading optimized layout with smooth user interactions",
+        "Custom product pages for security seals, toners, POS printers, and office solutions",
+        "Corporate trust-building sections including certifications and business advantages",
+        "Integrated contact and quotation request sections for lead generation",
+        "Tailwind CSS powered modern frontend with clean spacing and typography",
+        "Scalable architecture suitable for expanding product categories and services"
+    ]
+},
   {
   id: "website-1",
   title: "Web Project – Premium Real Estate for Modern Living",
@@ -438,7 +464,7 @@ export const portfolioItems: PortfolioItem[] = [
 
 
 {
-  id: "website-2",
+  id: "website-3",
   title: "Glow Luxe – Luxury Beauty & Wellness Salon Website",
   image: "https://i.postimg.cc/bwJjSQzY/Screenshot-2025-12-11-132258.png",
   description:
@@ -460,7 +486,7 @@ export const portfolioItems: PortfolioItem[] = [
 },
 
 {
-  id: "website-3",
+  id: "website-4",
   title: "Lovable Brew – Coffee Shop Website",
   image: "https://i.postimg.cc/PrK4J7rt/Screenshot-2025-12-11-163609.png",
   description:
@@ -480,7 +506,7 @@ export const portfolioItems: PortfolioItem[] = [
 },
 
 {
-  id: "website-4",
+  id: "website-5",
   title: "NexusPhones – Premium Mobile Store Website",
   image: "https://i.postimg.cc/K8xDSqRy/Screenshot-2025-12-11-212838.png",
   description:
@@ -502,7 +528,7 @@ export const portfolioItems: PortfolioItem[] = [
 },
 
 {
-  id: "website-5",
+  id: "website-6",
   title: "Axiom – Intelligent Data & Analytics Platform Website",
   image: "https://i.postimg.cc/KYbhtyqN/Screenshot-2025-12-11-210237.png",
   description:
