@@ -9,7 +9,7 @@ const certifications: Certification[] = [
     title: "Digital Marketing Certification – Evotech Education",
     platform: "Evotech",
     year: "2024",
-    image: "/certificates/evotech.jpg",
+    image: "/certificates/Back.webp",
     category: "Digital Marketing",
     description:
       "Successfully completed a professional Digital Marketing certification conducted by Evotech Education. The program covered SEO fundamentals, social media marketing, online advertising strategies, content marketing, and digital campaign planning.",
@@ -27,7 +27,7 @@ const certifications: Certification[] = [
     title: "Digital Marketing Certification – HubSpot Academy",
     platform: "HubSpot Academy",
     year: "2025",
-    image: "certificates/HubSpot.png",
+    image: "certificates/HubSpot.webp",
     category: "Digital Marketing",
     description:
       "Successfully completed the Digital Marketing Certification from HubSpot Academy. This program validated expertise in inbound marketing strategies, SEO-friendly content creation, website optimization, social media strategy development, video marketing, paid advertising, and performance measurement. The certification demonstrates practical knowledge in planning, executing, and analyzing digital marketing campaigns with a data-driven and customer-focused approach.Certificate Code: 25bbca7680e04ab6960b5edc80a37cfe",
