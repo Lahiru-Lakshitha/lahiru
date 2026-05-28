@@ -9,7 +9,7 @@ const certifications: Certification[] = [
     title: "Digital Marketing Certification – Evotech Education",
     platform: "Evotech",
     year: "2024",
-    image: "/certificates/Back.webp",
+    image: "certificates/Back.webp",
     category: "Digital Marketing",
     description:
       "Successfully completed a professional Digital Marketing certification conducted by Evotech Education. The program covered SEO fundamentals, social media marketing, online advertising strategies, content marketing, and digital campaign planning.",
