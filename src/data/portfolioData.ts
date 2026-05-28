@@ -84,7 +84,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
   id: "social-design-1",
   title: "Brand Campaign Graphics",
-  image: "image.jpg",
+  image: "https://postimg.cc/dDnNCzLN",
   description: "Designed for DJ Event hold by Kamatha Restaurant",
   category: "social-media-designs",
   type: "image",
